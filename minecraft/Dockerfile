@@ -17,7 +17,7 @@ RUN curl -sqL https://apt.corretto.aws/corretto.key | apt-key add - \
     && apt-add-repository 'deb https://apt.corretto.aws stable main' \
     && apt-get update \
     && apt-get install -y --no-install-recommends --no-install-suggests \
-        java-11-amazon-corretto-jdk
+        java-16-amazon-corretto-jdk
 
 # Clean up
 RUN apt-get remove --purge -y \
